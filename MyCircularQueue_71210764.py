@@ -40,7 +40,7 @@ class MyCircularQueue():
             for i in range(self.head, self.tail + 1):
                 print(self.data[i], end=" ")
             print()
-        elif len(self.data) == self.capacity:
+        else:
             print("Data ada pada antrian circular adalah: ", end="")
             for i in range(self.head, self.capacity):
                 print(self.data[i], end=" ")
