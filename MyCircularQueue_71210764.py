@@ -22,14 +22,14 @@ class MyCircularQueue():
             print("kosong!!\n")
 
         elif (self.head == self.tail):
-            temp = self.data[self.head]
+            hapus = self.data[self.head]
             self.head = -1
             self.tail = -1
-            return temp
+            return hapus
         else:
-            temp = self.data[self.head]
+            hapus = self.data[self.head]
             self.head = (self.head + 1) % self.capacity
-            return temp
+            return hapus
 
     def display(self):
         if self.head == -1:
