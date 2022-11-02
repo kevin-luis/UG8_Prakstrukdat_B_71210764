@@ -47,7 +47,10 @@ class MyCircularQueue():
             for i in range(0, self.tail + 1):
                 print(self.data[i], end=" ")
             print()
-
+            if ((self.tail + 1) % self.capacity == self.head):
+                print("Antrian penuh!!")
+            else:
+                print()
 circularQueue = MyCircularQueue(5) 
 circularQueue.enqueue (14) 
 circularQueue.enqueue (22) 
